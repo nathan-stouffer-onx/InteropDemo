@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CxxTest
 
 struct ContentView: View {
     var body: some View {

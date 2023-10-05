@@ -14,6 +14,7 @@
 		93F291652ACF2DAD00781464 /* InteropDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291642ACF2DAD00781464 /* InteropDemoTests.swift */; };
 		93F2916F2ACF2DAD00781464 /* InteropDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F2916E2ACF2DAD00781464 /* InteropDemoUITests.swift */; };
 		93F291712ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291702ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift */; };
+		93F291952ACF4FBE00781464 /* CxxTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93F291932ACF4FBE00781464 /* CxxTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		93F2918A2ACF4F7A00781464 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		93F291502ACF2DAB00781464 /* InteropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F291532ACF2DAB00781464 /* InteropDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoApp.swift; sourceTree = "<group>"; };
@@ -44,6 +57,11 @@
 		93F2916A2ACF2DAD00781464 /* InteropDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteropDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F2916E2ACF2DAD00781464 /* InteropDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoUITests.swift; sourceTree = "<group>"; };
 		93F291702ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93F2918C2ACF4F7A00781464 /* libCxxTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCxxTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F291932ACF4FBE00781464 /* CxxTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CxxTest.cpp; sourceTree = "<group>"; };
+		93F291942ACF4FBE00781464 /* CxxTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CxxTest.hpp; sourceTree = "<group>"; };
+		93F291972ACF53C400781464 /* Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		93F291982ACF53FD00781464 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +86,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93F291892ACF4F7A00781464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +102,7 @@
 				93F291522ACF2DAB00781464 /* InteropDemo */,
 				93F291632ACF2DAD00781464 /* InteropDemoTests */,
 				93F2916D2ACF2DAD00781464 /* InteropDemoUITests */,
+				93F2918D2ACF4F7A00781464 /* CxxTest */,
 				93F291512ACF2DAB00781464 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +113,7 @@
 				93F291502ACF2DAB00781464 /* InteropDemo.app */,
 				93F291602ACF2DAD00781464 /* InteropDemoTests.xctest */,
 				93F2916A2ACF2DAD00781464 /* InteropDemoUITests.xctest */,
+				93F2918C2ACF4F7A00781464 /* libCxxTest.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +152,17 @@
 				93F291702ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift */,
 			);
 			path = InteropDemoUITests;
+			sourceTree = "<group>";
+		};
+		93F2918D2ACF4F7A00781464 /* CxxTest */ = {
+			isa = PBXGroup;
+			children = (
+				93F291932ACF4FBE00781464 /* CxxTest.cpp */,
+				93F291942ACF4FBE00781464 /* CxxTest.hpp */,
+				93F291972ACF53C400781464 /* Vector.h */,
+				93F291982ACF53FD00781464 /* module.modulemap */,
+			);
+			path = CxxTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +221,23 @@
 			productReference = 93F2916A2ACF2DAD00781464 /* InteropDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		93F2918B2ACF4F7A00781464 /* CxxTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93F291922ACF4F7A00781464 /* Build configuration list for PBXNativeTarget "CxxTest" */;
+			buildPhases = (
+				93F291882ACF4F7A00781464 /* Sources */,
+				93F291892ACF4F7A00781464 /* Frameworks */,
+				93F2918A2ACF4F7A00781464 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CxxTest;
+			productName = CxxTest;
+			productReference = 93F2918C2ACF4F7A00781464 /* libCxxTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +259,10 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 93F2914F2ACF2DAB00781464;
 					};
+					93F2918B2ACF4F7A00781464 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
 				};
 			};
 			buildConfigurationList = 93F2914B2ACF2DAB00781464 /* Build configuration list for PBXProject "InteropDemo" */;
@@ -222,6 +281,7 @@
 				93F2914F2ACF2DAB00781464 /* InteropDemo */,
 				93F2915F2ACF2DAD00781464 /* InteropDemoTests */,
 				93F291692ACF2DAD00781464 /* InteropDemoUITests */,
+				93F2918B2ACF4F7A00781464 /* CxxTest */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +336,14 @@
 			files = (
 				93F2916F2ACF2DAD00781464 /* InteropDemoUITests.swift in Sources */,
 				93F291712ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F291882ACF4F7A00781464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F291952ACF4FBE00781464 /* CxxTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,9 +503,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
 				PRODUCT_BUNDLE_IDENTIFIER = onx.InteropDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = ./InteropDemo/CxxTest;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,9 +535,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
 				PRODUCT_BUNDLE_IDENTIFIER = onx.InteropDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = ./InteropDemo/CxxTest;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -548,6 +622,35 @@
 			};
 			name = Release;
 		};
+		93F291902ACF4F7A00781464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNJ68U9N26;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93F291912ACF4F7A00781464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNJ68U9N26;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +686,15 @@
 			buildConfigurations = (
 				93F2917B2ACF2DAD00781464 /* Debug */,
 				93F2917C2ACF2DAD00781464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93F291922ACF4F7A00781464 /* Build configuration list for PBXNativeTarget "CxxTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F291902ACF4F7A00781464 /* Debug */,
+				93F291912ACF4F7A00781464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
