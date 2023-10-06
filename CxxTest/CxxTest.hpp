@@ -8,7 +8,9 @@
 #ifndef CxxTest_hpp
 #define CxxTest_hpp
 
-#include <stdio.h>
+#include <cstdio>
+
+#include <memory>
 
 #include "Vector.h"
 
@@ -24,6 +26,10 @@ namespace lucid {
     typedef InstantiateTypes<float> tile;
 
 }
+
+using Vector3 = lucid::tile::Vector3;
+
+std::shared_ptr<Vector3> constructShared(float value);
 
 void initialize(size_t width, size_t height);
 

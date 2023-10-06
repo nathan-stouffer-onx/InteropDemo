@@ -15,6 +15,9 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            Text("\(lucid.tile.Vector3(5.0).x)")
+            Text("\(Vector3(7.0).x)")
+            //Text("\(constructShared(7.0).pointee.x)")
         }
         .padding()
     }

@@ -39,7 +39,7 @@ namespace math {
         T x, y, z;
         
         Vector() : Vector(T(0)) {}
-        Vector(T value) : x(0), y(0), z(0) {}
+        Vector(T value) : x(value), y(value), z(value) {}
         
         T& operator[](size_t i)
         {
