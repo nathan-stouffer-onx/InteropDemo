@@ -47,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		932DC75D2AD0A97000167591 /* Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
 		93F291502ACF2DAB00781464 /* InteropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F291532ACF2DAB00781464 /* InteropDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoApp.swift; sourceTree = "<group>"; };
 		93F291552ACF2DAB00781464 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,8 +100,9 @@
 		932DC75C2AD0A1FE00167591 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				93F291942ACF4FBE00781464 /* CxxTest.hpp */,
 				93F291972ACF53C400781464 /* Vector.h */,
+				932DC75D2AD0A97000167591 /* Types.h */,
+				93F291942ACF4FBE00781464 /* CxxTest.hpp */,
 				93F291982ACF53FD00781464 /* module.modulemap */,
 			);
 			path = include;
