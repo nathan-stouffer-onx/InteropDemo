@@ -96,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		932DC75C2AD0A1FE00167591 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				93F291942ACF4FBE00781464 /* CxxTest.hpp */,
+				93F291972ACF53C400781464 /* Vector.h */,
+				93F291982ACF53FD00781464 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		93F291472ACF2DAB00781464 = {
 			isa = PBXGroup;
 			children = (
@@ -157,10 +167,8 @@
 		93F2918D2ACF4F7A00781464 /* CxxTest */ = {
 			isa = PBXGroup;
 			children = (
+				932DC75C2AD0A1FE00167591 /* include */,
 				93F291932ACF4FBE00781464 /* CxxTest.cpp */,
-				93F291942ACF4FBE00781464 /* CxxTest.hpp */,
-				93F291972ACF53C400781464 /* Vector.h */,
-				93F291982ACF53FD00781464 /* module.modulemap */,
 			);
 			path = CxxTest;
 			sourceTree = "<group>";
@@ -507,7 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = onx.InteropDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INCLUDE_PATHS = ./CxxTest/;
+				SWIFT_INCLUDE_PATHS = ./CxxTest/include;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -539,7 +547,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = onx.InteropDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INCLUDE_PATHS = ./CxxTest/;
+				SWIFT_INCLUDE_PATHS = ./CxxTest/include;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -29,8 +29,10 @@ namespace lucid {
 
 using Vector3 = lucid::tile::Vector3;
 
+Vector3 constructVector3(float value);
+
 std::shared_ptr<Vector3> constructShared(float value);
 
-void initialize(size_t width, size_t height);
+bool initialize(size_t width, size_t height);
 
 #endif /* CxxTest_hpp */
