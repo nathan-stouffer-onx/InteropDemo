@@ -19,7 +19,7 @@ struct ContentView: View {
             Text("\(lucid.tile.Vector4(5.0)[0])")
             Text("\(constructVector3(3).y)")
             Text(initialize(40, 80) ? "True" : "False")
-            //Text("\(constructShared(7.0).pointee.x)")
+            Text("\(constructShared(7.0).pointee.x)")
         }
         .padding()
     }

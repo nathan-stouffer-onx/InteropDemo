@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93080E672AD5931200E0947D /* CxxTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93F291932ACF4FBE00781464 /* CxxTest.cpp */; };
 		93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291532ACF2DAB00781464 /* InteropDemoApp.swift */; };
 		93F291562ACF2DAB00781464 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291552ACF2DAB00781464 /* ContentView.swift */; };
 		93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F291572ACF2DAD00781464 /* Assets.xcassets */; };
@@ -327,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93080E672AD5931200E0947D /* CxxTest.cpp in Sources */,
 				93F291562ACF2DAB00781464 /* ContentView.swift in Sources */,
 				93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */,
 			);
