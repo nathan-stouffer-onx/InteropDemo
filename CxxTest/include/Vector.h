@@ -9,6 +9,8 @@
 
 #include <cmath>
 
+#include <iostream>
+
 namespace lucid {
 namespace math {
 
@@ -40,6 +42,10 @@ namespace math {
         
         Vector() : Vector(T(0)) {}
         Vector(T value) : x(value), y(value), z(value) {}
+        ~Vector()
+        {
+            std::cout << "destructing Vector3" << std::endl;
+        }
         
         T& operator[](size_t i)
         {

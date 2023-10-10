@@ -9,6 +9,10 @@ import SwiftUI
 import CxxTest
 
 struct ContentView: View {
+    func tester() {
+        constructShared(8)
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,6 +24,9 @@ struct ContentView: View {
             Text("\(constructVector3(3).y)")
             Text(initialize(40, 80) ? "True" : "False")
             Text("\(constructShared(7.0).pointee.x)")
+            Button(action: tester, label: {
+                Text("run tester")
+            })
         }
         .padding()
     }
