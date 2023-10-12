@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		935EF2A62AD84B8D00E339E9 /* libonyx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 935EF2A52AD84B8D00E339E9 /* libonyx.a */; };
-		935EF2A72AD84B9100E339E9 /* libonyx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 935EF2A52AD84B8D00E339E9 /* libonyx.a */; };
+		930EA9472AD895B30083B81C /* libonyx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930EA9462AD895B30083B81C /* libonyx.a */; };
+		930EA9492AD8961C0083B81C /* libonyx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930EA9462AD895B30083B81C /* libonyx.a */; };
 		93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291532ACF2DAB00781464 /* InteropDemoApp.swift */; };
 		93F291562ACF2DAB00781464 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291552ACF2DAB00781464 /* ContentView.swift */; };
 		93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F291572ACF2DAD00781464 /* Assets.xcassets */; };
@@ -48,9 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		930EA92B2AD85C340083B81C /* arm64 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = arm64; sourceTree = "<group>"; };
-		930EA92C2AD85C340083B81C /* x86_64 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = x86_64; sourceTree = "<group>"; };
-		935EF2A52AD84B8D00E339E9 /* libonyx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libonyx.a; sourceTree = "<group>"; };
+		930EA9462AD895B30083B81C /* libonyx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libonyx.a; sourceTree = "<group>"; };
 		935EF2A92AD850BE00E339E9 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		935EF2AA2AD850BE00E339E9 /* lucid */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lucid; sourceTree = "<group>"; };
 		93F291502ACF2DAB00781464 /* InteropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935EF2A72AD84B9100E339E9 /* libonyx.a in Frameworks */,
+				930EA9492AD8961C0083B81C /* libonyx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,13 +93,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935EF2A62AD84B8D00E339E9 /* libonyx.a in Frameworks */,
+				930EA9472AD895B30083B81C /* libonyx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930EA93D2AD894780083B81C /* device */ = {
+			isa = PBXGroup;
+			children = (
+				930EA93E2AD894810083B81C /* arm64 */,
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		930EA93E2AD894810083B81C /* arm64 */ = {
+			isa = PBXGroup;
+			children = (
+				930EA93F2AD894930083B81C /* lib */,
+			);
+			path = arm64;
+			sourceTree = "<group>";
+		};
+		930EA93F2AD894930083B81C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				930EA9462AD895B30083B81C /* libonyx.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		930EA9412AD894B00083B81C /* simulator */ = {
+			isa = PBXGroup;
+			children = (
+				930EA9442AD894C10083B81C /* arm64 */,
+				930EA9422AD894B70083B81C /* x86_64 */,
+			);
+			path = simulator;
+			sourceTree = "<group>";
+		};
+		930EA9422AD894B70083B81C /* x86_64 */ = {
+			isa = PBXGroup;
+			children = (
+				930EA9432AD894BD0083B81C /* lib */,
+			);
+			path = x86_64;
+			sourceTree = "<group>";
+		};
+		930EA9432AD894BD0083B81C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		930EA9442AD894C10083B81C /* arm64 */ = {
+			isa = PBXGroup;
+			children = (
+				930EA9452AD894C60083B81C /* lib */,
+			);
+			path = arm64;
+			sourceTree = "<group>";
+		};
+		930EA9452AD894C60083B81C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		932DC75C2AD0A1FE00167591 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,9 +235,8 @@
 		93F2918D2ACF4F7A00781464 /* CxxTest */ = {
 			isa = PBXGroup;
 			children = (
-				930EA92B2AD85C340083B81C /* arm64 */,
-				930EA92C2AD85C340083B81C /* x86_64 */,
-				935EF2A52AD84B8D00E339E9 /* libonyx.a */,
+				930EA9412AD894B00083B81C /* simulator */,
+				930EA93D2AD894780083B81C /* device */,
 				932DC75C2AD0A1FE00167591 /* include */,
 			);
 			path = CxxTest;
@@ -519,14 +579,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
+				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/CxxTest/arm64/lib",
-				);
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CxxTest/x86_64/lib",
+					"$(PROJECT_DIR)/CxxTest/device/arm64/lib",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
@@ -561,14 +616,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
+				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/CxxTest/arm64/lib",
-				);
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CxxTest/x86_64/lib",
+					"$(PROJECT_DIR)/CxxTest/device/arm64/lib",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
@@ -667,6 +717,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CxxTest",
+					"$(PROJECT_DIR)/CxxTest/device/arm64/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -686,6 +737,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CxxTest",
+					"$(PROJECT_DIR)/CxxTest/device/arm64/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
