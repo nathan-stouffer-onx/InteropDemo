@@ -10,7 +10,7 @@ import CxxTest
 
 struct ContentView: View {
     func tester() {
-        constructShared(8)
+        onyx.constructShared(8)
     }
     
     var body: some View {
@@ -19,11 +19,11 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
-            Text("\(Vector3(7.0).x)")
+            Text("\(onyx.Vector3(7.0).x)")
             Text("\(lucid.tile.Vector4(5.0)[0])")
-            Text("\(constructVector3(3).y)")
-            Text(initialize(40, 80) ? "True" : "False")
-            Text("\(constructShared(7.0).pointee.x)")
+            Text("\(onyx.constructVector3(3).y)")
+            Text(onyx.initialize(40, 80) ? "True" : "False")
+            Text("\(onyx.constructShared(7.0).pointee.x)")
             Button(action: tester, label: {
                 Text("run tester")
             })
