@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Types.h"
+#include <lucid/Types.h>
 
 namespace onyx {
 
