@@ -1,6 +1,0 @@
-module onyx {
-    header "onyx.hpp"
-    requires cplusplus
-    
-    export *
-}

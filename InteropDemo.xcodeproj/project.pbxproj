@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93B78E912AD9F3A700A98D31 /* onyx.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B78E902AD9F3A700A98D31 /* onyx.xcframework */; };
+		93B78E942AD9FCD000A98D31 /* TestOnyxPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 93B78E932AD9FCD000A98D31 /* TestOnyxPackage */; };
 		93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291532ACF2DAB00781464 /* InteropDemoApp.swift */; };
 		93F291562ACF2DAB00781464 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291552ACF2DAB00781464 /* ContentView.swift */; };
 		93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F291572ACF2DAD00781464 /* Assets.xcassets */; };
@@ -48,7 +48,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		93B78E902AD9F3A700A98D31 /* onyx.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = onyx.xcframework; path = xcframework/onyx.xcframework; sourceTree = SOURCE_ROOT; };
 		93F291502ACF2DAB00781464 /* InteropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F291532ACF2DAB00781464 /* InteropDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoApp.swift; sourceTree = "<group>"; };
 		93F291552ACF2DAB00781464 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B78E912AD9F3A700A98D31 /* onyx.xcframework in Frameworks */,
+				93B78E942AD9FCD000A98D31 /* TestOnyxPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +109,6 @@
 		93F291522ACF2DAB00781464 /* InteropDemo */ = {
 			isa = PBXGroup;
 			children = (
-				93B78E902AD9F3A700A98D31 /* onyx.xcframework */,
 				93F291532ACF2DAB00781464 /* InteropDemoApp.swift */,
 				93F291552ACF2DAB00781464 /* ContentView.swift */,
 				93F291572ACF2DAD00781464 /* Assets.xcassets */,
@@ -161,6 +159,9 @@
 			dependencies = (
 			);
 			name = InteropDemo;
+			packageProductDependencies = (
+				93B78E932AD9FCD000A98D31 /* TestOnyxPackage */,
+			);
 			productName = InteropDemo;
 			productReference = 93F291502ACF2DAB00781464 /* InteropDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -233,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 93F291472ACF2DAB00781464;
+			packageReferences = (
+				93B78E922AD9FCD000A98D31 /* XCRemoteSwiftPackageReference "TestOnyxPackage" */,
+			);
 			productRefGroup = 93F291512ACF2DAB00781464 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -616,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93B78E922AD9FCD000A98D31 /* XCRemoteSwiftPackageReference "TestOnyxPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nathan-stouffer-onx/TestOnyxPackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93B78E932AD9FCD000A98D31 /* TestOnyxPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93B78E922AD9FCD000A98D31 /* XCRemoteSwiftPackageReference "TestOnyxPackage" */;
+			productName = TestOnyxPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93F291482ACF2DAB00781464 /* Project object */;
 }
