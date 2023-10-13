@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93B78E942AD9FCD000A98D31 /* TestOnyxPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 93B78E932AD9FCD000A98D31 /* TestOnyxPackage */; };
 		93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291532ACF2DAB00781464 /* InteropDemoApp.swift */; };
 		93F291562ACF2DAB00781464 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291552ACF2DAB00781464 /* ContentView.swift */; };
 		93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F291572ACF2DAD00781464 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B78E942AD9FCD000A98D31 /* TestOnyxPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +159,9 @@
 			dependencies = (
 			);
 			name = InteropDemo;
+			packageProductDependencies = (
+				93B78E932AD9FCD000A98D31 /* TestOnyxPackage */,
+			);
 			productName = InteropDemo;
 			productReference = 93F291502ACF2DAB00781464 /* InteropDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 93F291472ACF2DAB00781464;
+			packageReferences = (
+				93B78E922AD9FCD000A98D31 /* XCRemoteSwiftPackageReference "TestOnyxPackage" */,
+			);
 			productRefGroup = 93F291512ACF2DAB00781464 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -612,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93B78E922AD9FCD000A98D31 /* XCRemoteSwiftPackageReference "TestOnyxPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nathan-stouffer-onx/TestOnyxPackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93B78E932AD9FCD000A98D31 /* TestOnyxPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93B78E922AD9FCD000A98D31 /* XCRemoteSwiftPackageReference "TestOnyxPackage" */;
+			productName = TestOnyxPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93F291482ACF2DAB00781464 /* Project object */;
 }

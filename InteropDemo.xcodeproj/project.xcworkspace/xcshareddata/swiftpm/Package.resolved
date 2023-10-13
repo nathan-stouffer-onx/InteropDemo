@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "testonyxpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nathan-stouffer-onx/TestOnyxPackage",
+      "state" : {
+        "revision" : "94ee3c88e749d05f642d0716e97ebef05528f724",
+        "version" : "0.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
