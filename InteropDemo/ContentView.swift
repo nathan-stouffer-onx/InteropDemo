@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import CxxTest
+import onyx
 
 struct ContentView: View {
     func tester() {

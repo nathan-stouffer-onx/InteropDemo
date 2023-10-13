@@ -1,5 +1,5 @@
-module CxxTest {
-    header "CxxTest.hpp"
+module onyx {
+    header "onyx.hpp"
     requires cplusplus
     
     export *

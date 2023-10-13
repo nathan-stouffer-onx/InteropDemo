@@ -8,10 +8,10 @@ cd ${OLDPWD}
 
 PREFIX=../code/build/installed
 
-cp CxxTest.hpp ${PREFIX}/device/arm64-ios/include/
+cp onyx.hpp ${PREFIX}/device/arm64-ios/include/
 cp module.modulemap ${PREFIX}/device/arm64-ios/include/
 
-cp CxxTest.hpp ${PREFIX}/simulator/x86_64-ios/include/
+cp onyx.hpp ${PREFIX}/simulator/x86_64-ios/include/
 cp module.modulemap ${PREFIX}/simulator/x86_64-ios/include/
 
 xcodebuild -create-xcframework \
