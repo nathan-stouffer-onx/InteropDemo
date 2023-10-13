@@ -17,4 +17,4 @@ cp module.modulemap ${PREFIX}/simulator/x86_64-ios/include/
 xcodebuild -create-xcframework \
     -library ${PREFIX}/device/arm64-ios/lib/libonyx.a -headers ${PREFIX}/device/arm64-ios/include \
     -library ${PREFIX}/simulator/x86_64-ios/lib/libonyx.a -headers ${PREFIX}/simulator/x86_64-ios/include \
-    -output tmp.xcframework
+    -output onyx.xcframework
