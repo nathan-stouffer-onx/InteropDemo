@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		930EA9472AD895B30083B81C /* libonyx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930EA9462AD895B30083B81C /* libonyx.a */; };
-		930EA9492AD8961C0083B81C /* libonyx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930EA9462AD895B30083B81C /* libonyx.a */; };
+		93B78E912AD9F3A700A98D31 /* onyx.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B78E902AD9F3A700A98D31 /* onyx.xcframework */; };
 		93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291532ACF2DAB00781464 /* InteropDemoApp.swift */; };
 		93F291562ACF2DAB00781464 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291552ACF2DAB00781464 /* ContentView.swift */; };
 		93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F291572ACF2DAD00781464 /* Assets.xcassets */; };
@@ -36,21 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		93F2918A2ACF4F7A00781464 /* CopyFiles */ = {
+		93C0F3062AD9DD7F00B68FEF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		930EA9462AD895B30083B81C /* libonyx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libonyx.a; sourceTree = "<group>"; };
-		935EF2A92AD850BE00E339E9 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
-		935EF2AA2AD850BE00E339E9 /* lucid */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lucid; sourceTree = "<group>"; };
+		93B78E902AD9F3A700A98D31 /* onyx.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = onyx.xcframework; path = xcframework/onyx.xcframework; sourceTree = SOURCE_ROOT; };
 		93F291502ACF2DAB00781464 /* InteropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F291532ACF2DAB00781464 /* InteropDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoApp.swift; sourceTree = "<group>"; };
 		93F291552ACF2DAB00781464 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,9 +59,6 @@
 		93F2916A2ACF2DAD00781464 /* InteropDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteropDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F2916E2ACF2DAD00781464 /* InteropDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoUITests.swift; sourceTree = "<group>"; };
 		93F291702ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		93F2918C2ACF4F7A00781464 /* libCxxTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCxxTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F291942ACF4FBE00781464 /* CxxTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CxxTest.hpp; sourceTree = "<group>"; };
-		93F291982ACF53FD00781464 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930EA9492AD8961C0083B81C /* libonyx.a in Frameworks */,
+				93B78E912AD9F3A700A98D31 /* onyx.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,98 +84,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93F291892ACF4F7A00781464 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				930EA9472AD895B30083B81C /* libonyx.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		930EA93D2AD894780083B81C /* device */ = {
-			isa = PBXGroup;
-			children = (
-				930EA93E2AD894810083B81C /* arm64 */,
-			);
-			path = device;
-			sourceTree = "<group>";
-		};
-		930EA93E2AD894810083B81C /* arm64 */ = {
-			isa = PBXGroup;
-			children = (
-				930EA93F2AD894930083B81C /* lib */,
-			);
-			path = arm64;
-			sourceTree = "<group>";
-		};
-		930EA93F2AD894930083B81C /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				930EA9462AD895B30083B81C /* libonyx.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		930EA9412AD894B00083B81C /* simulator */ = {
-			isa = PBXGroup;
-			children = (
-				930EA9442AD894C10083B81C /* arm64 */,
-				930EA9422AD894B70083B81C /* x86_64 */,
-			);
-			path = simulator;
-			sourceTree = "<group>";
-		};
-		930EA9422AD894B70083B81C /* x86_64 */ = {
-			isa = PBXGroup;
-			children = (
-				930EA9432AD894BD0083B81C /* lib */,
-			);
-			path = x86_64;
-			sourceTree = "<group>";
-		};
-		930EA9432AD894BD0083B81C /* lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		930EA9442AD894C10083B81C /* arm64 */ = {
-			isa = PBXGroup;
-			children = (
-				930EA9452AD894C60083B81C /* lib */,
-			);
-			path = arm64;
-			sourceTree = "<group>";
-		};
-		930EA9452AD894C60083B81C /* lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		932DC75C2AD0A1FE00167591 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				935EF2A92AD850BE00E339E9 /* API.h */,
-				935EF2AA2AD850BE00E339E9 /* lucid */,
-				93F291982ACF53FD00781464 /* module.modulemap */,
-				93F291942ACF4FBE00781464 /* CxxTest.hpp */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
 		93F291472ACF2DAB00781464 = {
 			isa = PBXGroup;
 			children = (
 				93F291522ACF2DAB00781464 /* InteropDemo */,
 				93F291632ACF2DAD00781464 /* InteropDemoTests */,
 				93F2916D2ACF2DAD00781464 /* InteropDemoUITests */,
-				93F2918D2ACF4F7A00781464 /* CxxTest */,
 				93F291512ACF2DAB00781464 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -191,7 +103,6 @@
 				93F291502ACF2DAB00781464 /* InteropDemo.app */,
 				93F291602ACF2DAD00781464 /* InteropDemoTests.xctest */,
 				93F2916A2ACF2DAD00781464 /* InteropDemoUITests.xctest */,
-				93F2918C2ACF4F7A00781464 /* libCxxTest.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,6 +110,7 @@
 		93F291522ACF2DAB00781464 /* InteropDemo */ = {
 			isa = PBXGroup;
 			children = (
+				93B78E902AD9F3A700A98D31 /* onyx.xcframework */,
 				93F291532ACF2DAB00781464 /* InteropDemoApp.swift */,
 				93F291552ACF2DAB00781464 /* ContentView.swift */,
 				93F291572ACF2DAD00781464 /* Assets.xcassets */,
@@ -232,16 +144,6 @@
 			path = InteropDemoUITests;
 			sourceTree = "<group>";
 		};
-		93F2918D2ACF4F7A00781464 /* CxxTest */ = {
-			isa = PBXGroup;
-			children = (
-				930EA9412AD894B00083B81C /* simulator */,
-				930EA93D2AD894780083B81C /* device */,
-				932DC75C2AD0A1FE00167591 /* include */,
-			);
-			path = CxxTest;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +154,7 @@
 				93F2914C2ACF2DAB00781464 /* Sources */,
 				93F2914D2ACF2DAB00781464 /* Frameworks */,
 				93F2914E2ACF2DAB00781464 /* Resources */,
+				93C0F3062AD9DD7F00B68FEF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,23 +201,6 @@
 			productReference = 93F2916A2ACF2DAD00781464 /* InteropDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		93F2918B2ACF4F7A00781464 /* CxxTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 93F291922ACF4F7A00781464 /* Build configuration list for PBXNativeTarget "CxxTest" */;
-			buildPhases = (
-				93F291882ACF4F7A00781464 /* Sources */,
-				93F291892ACF4F7A00781464 /* Frameworks */,
-				93F2918A2ACF4F7A00781464 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CxxTest;
-			productName = CxxTest;
-			productReference = 93F2918C2ACF4F7A00781464 /* libCxxTest.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -336,10 +222,6 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 93F2914F2ACF2DAB00781464;
 					};
-					93F2918B2ACF4F7A00781464 = {
-						CreatedOnToolsVersion = 15.0;
-						LastSwiftMigration = 1500;
-					};
 				};
 			};
 			buildConfigurationList = 93F2914B2ACF2DAB00781464 /* Build configuration list for PBXProject "InteropDemo" */;
@@ -358,7 +240,6 @@
 				93F2914F2ACF2DAB00781464 /* InteropDemo */,
 				93F2915F2ACF2DAD00781464 /* InteropDemoTests */,
 				93F291692ACF2DAD00781464 /* InteropDemoUITests */,
-				93F2918B2ACF4F7A00781464 /* CxxTest */,
 			);
 		};
 /* End PBXProject section */
@@ -413,13 +294,6 @@
 			files = (
 				93F2916F2ACF2DAD00781464 /* InteropDemoUITests.swift in Sources */,
 				93F291712ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F291882ACF4F7A00781464 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,16 +453,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CxxTest/device/arm64/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
 				PRODUCT_BUNDLE_IDENTIFIER = onx.InteropDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INCLUDE_PATHS = ./CxxTest/include;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -616,16 +487,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CxxTest/device/arm64/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
 				PRODUCT_BUNDLE_IDENTIFIER = onx.InteropDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INCLUDE_PATHS = ./CxxTest/include;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -708,45 +576,6 @@
 			};
 			name = Release;
 		};
-		93F291902ACF4F7A00781464 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KNJ68U9N26;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CxxTest",
-					"$(PROJECT_DIR)/CxxTest/device/arm64/lib",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		93F291912ACF4F7A00781464 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KNJ68U9N26;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CxxTest",
-					"$(PROJECT_DIR)/CxxTest/device/arm64/lib",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -782,15 +611,6 @@
 			buildConfigurations = (
 				93F2917B2ACF2DAD00781464 /* Debug */,
 				93F2917C2ACF2DAD00781464 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		93F291922ACF4F7A00781464 /* Build configuration list for PBXNativeTarget "CxxTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93F291902ACF4F7A00781464 /* Debug */,
-				93F291912ACF4F7A00781464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
