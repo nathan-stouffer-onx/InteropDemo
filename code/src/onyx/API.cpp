@@ -12,6 +12,11 @@ namespace onyx {
         return std::make_shared<Vector3>(value);
     }
 
+    shader::uniform constructUniform()
+    {
+        return shader::uniform();
+    }
+
     bool initialize(size_t width, size_t height)
     {
         // perform initialization here

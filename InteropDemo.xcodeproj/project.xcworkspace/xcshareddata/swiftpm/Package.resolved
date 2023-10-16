@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nathan-stouffer-onx/TestOnyxPackage",
       "state" : {
-        "revision" : "94ee3c88e749d05f642d0716e97ebef05528f724",
-        "version" : "0.0.0"
+        "revision" : "e9d094f0dd23167ff99c2cc2f17e67aa7988da49",
+        "version" : "0.0.7"
       }
     }
   ],
