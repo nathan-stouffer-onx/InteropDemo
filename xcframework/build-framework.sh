@@ -1,5 +1,7 @@
 #!/bin/sh
 
+rm -rf shaderlib.xcframework
+rm -rf onyxlib.xcframework
 rm -rf onyx.xcframework
 
 cd ../code
@@ -7,14 +9,23 @@ cd ../code
 cd ${OLDPWD}
 
 PREFIX=../code/build/installed
+ARM_PREFIX=${PREFIX}/device/arm64-ios
+X64_PREFIX=${PREFIX}/simulator/x86_64-ios
 
-cp onyx.hpp ${PREFIX}/device/arm64-ios/include/
-cp module.modulemap ${PREFIX}/device/arm64-ios/include/
+cp onyx.hpp ${ARM_PREFIX}/include/
+cp module.modulemap ${ARM_PREFIX}/include/
 
-cp onyx.hpp ${PREFIX}/simulator/x86_64-ios/include/
-cp module.modulemap ${PREFIX}/simulator/x86_64-ios/include/
+cp onyx.hpp ${X64_PREFIX}/include/
+cp module.modulemap ${X64_PREFIX}/include/
 
 xcodebuild -create-xcframework \
-    -library ${PREFIX}/device/arm64-ios/lib/libonyx.a -headers ${PREFIX}/device/arm64-ios/include \
-    -library ${PREFIX}/simulator/x86_64-ios/lib/libonyx.a -headers ${PREFIX}/simulator/x86_64-ios/include \
-    -output onyx.xcframework
+    -library ${ARM_PREFIX}/lib/libshader.a -headers ${ARM_PREFIX}/include \
+    -library ${X64_PREFIX}/lib/libshader.a -headers ${X64_PREFIX}/include \
+    -output shaderlib.xcframework
+
+xcodebuild -create-xcframework \
+    -library ${ARM_PREFIX}/lib/libonyx.a -headers ${ARM_PREFIX}/include \
+    -library ${X64_PREFIX}/lib/libonyx.a -headers ${X64_PREFIX}/include \
+    -output onyxlib.xcframework
+
+xcodebuild -create-xcframework -framework shaderlib.xcframework -framework onyxlib.xcframework -output onyx.xcframework
