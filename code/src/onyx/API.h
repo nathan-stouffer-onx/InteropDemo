@@ -11,7 +11,7 @@ namespace onyx {
 
     Vector3 constructVector3(float value);
 
-    shader::uniform consructUniform();
+    shader::uniform constructUniform();
 
     std::shared_ptr<Vector3> constructShared(float value);
 

@@ -1,7 +1,8 @@
 #!/bin/sh
 
-rm -rf shaderlib.xcframework
-rm -rf onyxlib.xcframework
+set -e
+
+rm -rf shader.xcframework
 rm -rf onyx.xcframework
 
 cd ../code
@@ -19,13 +20,11 @@ cp onyx.hpp ${X64_PREFIX}/include/
 cp module.modulemap ${X64_PREFIX}/include/
 
 xcodebuild -create-xcframework \
-    -library ${ARM_PREFIX}/lib/libshader.a -headers ${ARM_PREFIX}/include \
-    -library ${X64_PREFIX}/lib/libshader.a -headers ${X64_PREFIX}/include \
-    -output shaderlib.xcframework
+    -library ${ARM_PREFIX}/lib/libshader.a \
+    -library ${X64_PREFIX}/lib/libshader.a \
+    -output shader.xcframework
 
 xcodebuild -create-xcframework \
     -library ${ARM_PREFIX}/lib/libonyx.a -headers ${ARM_PREFIX}/include \
     -library ${X64_PREFIX}/lib/libonyx.a -headers ${X64_PREFIX}/include \
-    -output onyxlib.xcframework
-
-xcodebuild -create-xcframework -framework shaderlib.xcframework -framework onyxlib.xcframework -output onyx.xcframework
+    -output onyx.xcframework
