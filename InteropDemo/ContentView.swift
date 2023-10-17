@@ -10,7 +10,8 @@ import onyx
 
 struct ContentView: View {
     func tester() {
-        onyx.constructShared(8)
+        onyx.initialize(90, 90)
+        onyx.shutdown()
     }
     
     var body: some View {
@@ -18,13 +19,6 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Text("\(onyx.Vector3(7.0).x)")
-            Text("\(lucid.tile.Vector4(5.0)[0])")
-            Text("\(onyx.constructVector3(3).y)")
-            Text(onyx.initialize(40, 80) ? "True" : "False")
-            Text("\(onyx.constructShared(7.0).pointee.x)")
-            Text(String(onyx.str()))
             Button(action: tester, label: {
                 Text("run tester")
             })
