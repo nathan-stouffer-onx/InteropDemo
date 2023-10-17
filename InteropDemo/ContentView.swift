@@ -24,6 +24,7 @@ struct ContentView: View {
             Text("\(onyx.constructVector3(3).y)")
             Text(onyx.initialize(40, 80) ? "True" : "False")
             Text("\(onyx.constructShared(7.0).pointee.x)")
+            Text(String(onyx.str()))
             Button(action: tester, label: {
                 Text("run tester")
             })

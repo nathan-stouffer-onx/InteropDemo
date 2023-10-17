@@ -23,4 +23,9 @@ namespace onyx {
         return true;
     }
 
+    std::string str()
+    {
+        return "hello";
+    }
+
 }
