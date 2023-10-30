@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		935D4A3A2AF03B93001CD09E /* OnyxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D4A392AF03B93001CD09E /* OnyxView.swift */; };
+		935D4A3C2AF03D50001CD09E /* OnyxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */; };
 		93B78E942AD9FCD000A98D31 /* TestOnyxPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 93B78E932AD9FCD000A98D31 /* TestOnyxPackage */; };
 		93F2644A2AEACF8400D917C0 /* token.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93F264492AEACF8400D917C0 /* token.txt */; };
 		93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291532ACF2DAB00781464 /* InteropDemoApp.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		935D4A392AF03B93001CD09E /* OnyxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnyxView.swift; sourceTree = "<group>"; };
+		935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnyxViewController.swift; sourceTree = "<group>"; };
 		93F264492AEACF8400D917C0 /* token.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = token.txt; sourceTree = "<group>"; };
 		93F291502ACF2DAB00781464 /* InteropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F291532ACF2DAB00781464 /* InteropDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoApp.swift; sourceTree = "<group>"; };
@@ -112,10 +116,12 @@
 		93F291522ACF2DAB00781464 /* InteropDemo */ = {
 			isa = PBXGroup;
 			children = (
+				935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */,
 				93F291532ACF2DAB00781464 /* InteropDemoApp.swift */,
 				93F291552ACF2DAB00781464 /* ContentView.swift */,
 				93F291572ACF2DAD00781464 /* Assets.xcassets */,
 				93F291592ACF2DAD00781464 /* Preview Content */,
+				935D4A392AF03B93001CD09E /* OnyxView.swift */,
 			);
 			path = InteropDemo;
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F291562ACF2DAB00781464 /* ContentView.swift in Sources */,
+				935D4A3A2AF03B93001CD09E /* OnyxView.swift in Sources */,
+				935D4A3C2AF03D50001CD09E /* OnyxViewController.swift in Sources */,
 				93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
