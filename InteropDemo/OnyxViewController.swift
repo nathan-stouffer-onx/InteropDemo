@@ -28,57 +28,57 @@ class OnyxViewController: UIViewController {
         onyx.shutdown()
     }
             
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//		// iterate over the touches, assigning them the first available id and setting them as down
-//		for touch in touches {
-//			for (i, p) in pointers.enumerated() {
-//				if (p == nil) {
-//					pointers[i] = touch
-//					let location = touch.location(in: view)
-//					let x = (location.x / metalLayer.frame.width) * 2.0 - 1.0
-//					// offset by 20 to account for status bar offset
-//					let y = ((location.y - 20) / metalLayer.frame.height) * 2.0 - 1.0
-//					setPointerPosition(UInt32(i), Float(x), Float(y), Float(touch.force))
-//					setPointerDown(UInt32(i))
-//					break;
-//				}
-//			}
-//		}
-//    }
-//    
-//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-//		// iterate over touches, checking their id, setting the pointer as up, and marking the id as available
-//		for touch in touches {
-//			for (i, p) in pointers.enumerated() {
-//				if (p == touch) {
-//					pointers[i] = nil
-//					let location = touch.location(in: view)
-//					let x = (location.x / metalLayer.frame.width) * 2.0 - 1.0
-//					// offset by 20 to account for status bar offset
-//					let y = ((location.y - 20) / metalLayer.frame.height) * 2.0 - 1.0
-//					setPointerPosition(UInt32(i), Float(x), Float(y), Float(touch.force))
-//					setPointerUp(UInt32(i))
-//					break;
-//				}
-//			}
-//		}
-//    }
-//    
-//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-//		// iterate over the touches, find the id, and move the appropriate pointer
-//		for touch in touches {
-//			for (i, p) in pointers.enumerated() {
-//				if (p == touch) {
-//					let location = touch.location(in: view)
-//					let x = (location.x / metalLayer.frame.width) * 2.0 - 1.0
-//					// offset by 20 to account for status bar offset
-//					let y = ((location.y - 20) / metalLayer.frame.height) * 2.0 - 1.0
-//					setPointerPosition(UInt32(i), Float(x), Float(y), Float(touch.force))
-//					break;
-//				}
-//			}
-//		}
-//    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		// iterate over the touches, assigning them the first available id and setting them as down
+		for touch in touches {
+			for (i, p) in pointers.enumerated() {
+				if (p == nil) {
+					pointers[i] = touch
+					let location = touch.location(in: view)
+					let x = (location.x / metalLayer.frame.width) * 2.0 - 1.0
+					// offset by 20 to account for status bar offset
+					let y = ((location.y - 20) / metalLayer.frame.height) * 2.0 - 1.0
+                    onyx.setPointerPosition(UInt32(i), x, y, touch.force)
+                    onyx.setPointerDown(UInt32(i))
+					break;
+				}
+			}
+		}
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+		// iterate over touches, checking their id, setting the pointer as up, and marking the id as available
+		for touch in touches {
+			for (i, p) in pointers.enumerated() {
+				if (p == touch) {
+					pointers[i] = nil
+					let location = touch.location(in: view)
+					let x = (location.x / metalLayer.frame.width) * 2.0 - 1.0
+					// offset by 20 to account for status bar offset
+					let y = ((location.y - 20) / metalLayer.frame.height) * 2.0 - 1.0
+                    onyx.setPointerPosition(UInt32(i), x, y, touch.force)
+                    onyx.setPointerUp(UInt32(i))
+					break;
+				}
+			}
+		}
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+		// iterate over the touches, find the id, and move the appropriate pointer
+		for touch in touches {
+			for (i, p) in pointers.enumerated() {
+				if (p == touch) {
+					let location = touch.location(in: view)
+					let x = (location.x / metalLayer.frame.width) * 2.0 - 1.0
+					// offset by 20 to account for status bar offset
+					let y = ((location.y - 20) / metalLayer.frame.height) * 2.0 - 1.0
+                    onyx.setPointerPosition(UInt32(i), x, y, touch.force)
+					break;
+				}
+			}
+		}
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
