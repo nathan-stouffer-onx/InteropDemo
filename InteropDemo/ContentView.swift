@@ -23,17 +23,16 @@ struct ContentView: View {
     var device: MTLDevice! = MTLCreateSystemDefaultDevice()
     var metalLayer: CAMetalLayer! = window()
     
-    func files() {
-        let fm = FileManager.default
-        do
-        {
-            let items = try fm.subpathsOfDirectory(atPath: NSHomeDirectory())
-            for item in items {
-                print("Found \(item)")
-            }
-        } catch {
-            print("here")
+    func token() -> String {
+        let filePath = Bundle.main.path(forResource: "token", ofType: "txt")
+        let URL = NSURL.fileURL(withPath: filePath!)
+        do {
+            let string = try String.init(contentsOf: URL)
+            return string
+        } catch  {
+            print(error);
         }
+        return ""
     }
     
     func initialize() {
@@ -45,7 +44,8 @@ struct ContentView: View {
             print("Failed to find assets path")
             return
         }
-                
+        
+        onyx.setToken(std.string(token()))
         onyx.initialize(90, 90, unsafeMetalLayer, unsafeMetalDevice, std.string(bundle + "/"))
     }
     func shutdown() {
@@ -57,9 +57,6 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Button(action: files, label: {
-                Text("files")
-            })
             Button(action: initialize, label: {
                 Text("initiliaze")
             })

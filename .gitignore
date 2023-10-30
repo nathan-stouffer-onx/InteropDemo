@@ -1,2 +1,4 @@
 [Bb]uild/
 .build/
+
+*[Tt]oken*.txt
