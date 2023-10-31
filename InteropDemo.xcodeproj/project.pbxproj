@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		935D4A3A2AF03B93001CD09E /* OnyxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D4A392AF03B93001CD09E /* OnyxView.swift */; };
+		935D4A3C2AF03D50001CD09E /* OnyxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */; };
 		93B78E942AD9FCD000A98D31 /* TestOnyxPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 93B78E932AD9FCD000A98D31 /* TestOnyxPackage */; };
+		93F2644A2AEACF8400D917C0 /* token.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93F264492AEACF8400D917C0 /* token.txt */; };
 		93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291532ACF2DAB00781464 /* InteropDemoApp.swift */; };
 		93F291562ACF2DAB00781464 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291552ACF2DAB00781464 /* ContentView.swift */; };
 		93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F291572ACF2DAD00781464 /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		935D4A392AF03B93001CD09E /* OnyxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnyxView.swift; sourceTree = "<group>"; };
+		935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnyxViewController.swift; sourceTree = "<group>"; };
+		93F264492AEACF8400D917C0 /* token.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = token.txt; sourceTree = "<group>"; };
 		93F291502ACF2DAB00781464 /* InteropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F291532ACF2DAB00781464 /* InteropDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoApp.swift; sourceTree = "<group>"; };
 		93F291552ACF2DAB00781464 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 		93F291472ACF2DAB00781464 = {
 			isa = PBXGroup;
 			children = (
+				93F264492AEACF8400D917C0 /* token.txt */,
 				93F291522ACF2DAB00781464 /* InteropDemo */,
 				93F291632ACF2DAD00781464 /* InteropDemoTests */,
 				93F2916D2ACF2DAD00781464 /* InteropDemoUITests */,
@@ -109,8 +116,10 @@
 		93F291522ACF2DAB00781464 /* InteropDemo */ = {
 			isa = PBXGroup;
 			children = (
+				935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */,
 				93F291532ACF2DAB00781464 /* InteropDemoApp.swift */,
 				93F291552ACF2DAB00781464 /* ContentView.swift */,
+				935D4A392AF03B93001CD09E /* OnyxView.swift */,
 				93F291572ACF2DAD00781464 /* Assets.xcassets */,
 				93F291592ACF2DAD00781464 /* Preview Content */,
 			);
@@ -255,6 +264,7 @@
 			files = (
 				93F2915B2ACF2DAD00781464 /* Preview Assets.xcassets in Resources */,
 				93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */,
+				93F2644A2AEACF8400D917C0 /* token.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F291562ACF2DAB00781464 /* ContentView.swift in Sources */,
+				935D4A3A2AF03B93001CD09E /* OnyxView.swift in Sources */,
+				935D4A3C2AF03D50001CD09E /* OnyxViewController.swift in Sources */,
 				93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +458,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"InteropDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = KNJ68U9N26;
 				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -480,6 +496,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"InteropDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = KNJ68U9N26;
 				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

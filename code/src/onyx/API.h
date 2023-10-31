@@ -1,6 +1,7 @@
 #pragma once
 
 #include <memory>
+#include <string>
 
 #include <lucid/Types.h>
 #include <shader/uniform.h>
@@ -16,5 +17,7 @@ namespace onyx {
     std::shared_ptr<Vector3> constructShared(float value);
 
     bool initialize(size_t width, size_t height);
+
+    std::string str();
 
 }
