@@ -119,9 +119,9 @@
 				935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */,
 				93F291532ACF2DAB00781464 /* InteropDemoApp.swift */,
 				93F291552ACF2DAB00781464 /* ContentView.swift */,
+				935D4A392AF03B93001CD09E /* OnyxView.swift */,
 				93F291572ACF2DAD00781464 /* Assets.xcassets */,
 				93F291592ACF2DAD00781464 /* Preview Content */,
-				935D4A392AF03B93001CD09E /* OnyxView.swift */,
 			);
 			path = InteropDemo;
 			sourceTree = "<group>";
