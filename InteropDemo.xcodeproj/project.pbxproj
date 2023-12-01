@@ -51,6 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		935D4A392AF03B93001CD09E /* OnyxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnyxView.swift; sourceTree = "<group>"; };
+		935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnyxViewController.swift; sourceTree = "<group>"; };
+		93F264492AEACF8400D917C0 /* token.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = token.txt; sourceTree = "<group>"; };
 		93F291502ACF2DAB00781464 /* InteropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F291572ACF2DAD00781464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93F2915A2ACF2DAD00781464 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -274,6 +277,7 @@
 				93F4E3ED2B1A5B6D004BAB50 /* tokens in Resources */,
 				93F2915B2ACF2DAD00781464 /* Preview Assets.xcassets in Resources */,
 				93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */,
+				93F2644A2AEACF8400D917C0 /* token.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +472,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"InteropDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = KNJ68U9N26;
 				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -504,6 +512,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"InteropDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = KNJ68U9N26;
 				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
