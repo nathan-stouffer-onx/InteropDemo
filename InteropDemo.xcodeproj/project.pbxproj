@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		935D4A3A2AF03B93001CD09E /* OnyxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D4A392AF03B93001CD09E /* OnyxView.swift */; };
-		935D4A3C2AF03D50001CD09E /* OnyxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */; };
-		93B78E942AD9FCD000A98D31 /* TestOnyxPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 93B78E932AD9FCD000A98D31 /* TestOnyxPackage */; };
-		93F2644A2AEACF8400D917C0 /* token.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93F264492AEACF8400D917C0 /* token.txt */; };
-		93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291532ACF2DAB00781464 /* InteropDemoApp.swift */; };
-		93F291562ACF2DAB00781464 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291552ACF2DAB00781464 /* ContentView.swift */; };
 		93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F291572ACF2DAD00781464 /* Assets.xcassets */; };
 		93F2915B2ACF2DAD00781464 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F2915A2ACF2DAD00781464 /* Preview Assets.xcassets */; };
 		93F291652ACF2DAD00781464 /* InteropDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291642ACF2DAD00781464 /* InteropDemoTests.swift */; };
 		93F2916F2ACF2DAD00781464 /* InteropDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F2916E2ACF2DAD00781464 /* InteropDemoUITests.swift */; };
 		93F291712ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F291702ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift */; };
+		93F4E3E22B1A41C3004BAB50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F4E3E12B1A41C3004BAB50 /* ContentView.swift */; };
+		93F4E3E42B1A434B004BAB50 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F4E3E32B1A434B004BAB50 /* MapView.swift */; };
+		93F4E3E62B1A4356004BAB50 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F4E3E52B1A4356004BAB50 /* MapViewController.swift */; };
+		93F4E3E82B1A4397004BAB50 /* InteropDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F4E3E72B1A4397004BAB50 /* InteropDemo.swift */; };
+		93F4E3EB2B1A56AB004BAB50 /* OnyxMap in Frameworks */ = {isa = PBXBuildFile; productRef = 93F4E3EA2B1A56AB004BAB50 /* OnyxMap */; };
+		93F4E3ED2B1A5B6D004BAB50 /* tokens in Resources */ = {isa = PBXBuildFile; fileRef = 93F4E3EC2B1A5B6D004BAB50 /* tokens */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,6 @@
 		935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnyxViewController.swift; sourceTree = "<group>"; };
 		93F264492AEACF8400D917C0 /* token.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = token.txt; sourceTree = "<group>"; };
 		93F291502ACF2DAB00781464 /* InteropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F291532ACF2DAB00781464 /* InteropDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoApp.swift; sourceTree = "<group>"; };
-		93F291552ACF2DAB00781464 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93F291572ACF2DAD00781464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93F2915A2ACF2DAD00781464 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93F291602ACF2DAD00781464 /* InteropDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteropDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +62,11 @@
 		93F2916A2ACF2DAD00781464 /* InteropDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteropDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F2916E2ACF2DAD00781464 /* InteropDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoUITests.swift; sourceTree = "<group>"; };
 		93F291702ACF2DAD00781464 /* InteropDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93F4E3E12B1A41C3004BAB50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93F4E3E32B1A434B004BAB50 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		93F4E3E52B1A4356004BAB50 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		93F4E3E72B1A4397004BAB50 /* InteropDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropDemo.swift; sourceTree = "<group>"; };
+		93F4E3EC2B1A5B6D004BAB50 /* tokens */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tokens; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B78E942AD9FCD000A98D31 /* TestOnyxPackage in Frameworks */,
+				93F4E3EB2B1A56AB004BAB50 /* OnyxMap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +98,12 @@
 		93F291472ACF2DAB00781464 = {
 			isa = PBXGroup;
 			children = (
-				93F264492AEACF8400D917C0 /* token.txt */,
+				93F4E3EC2B1A5B6D004BAB50 /* tokens */,
 				93F291522ACF2DAB00781464 /* InteropDemo */,
 				93F291632ACF2DAD00781464 /* InteropDemoTests */,
 				93F2916D2ACF2DAD00781464 /* InteropDemoUITests */,
 				93F291512ACF2DAB00781464 /* Products */,
+				93F4E3E92B1A56AB004BAB50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,12 +120,12 @@
 		93F291522ACF2DAB00781464 /* InteropDemo */ = {
 			isa = PBXGroup;
 			children = (
-				935D4A3B2AF03D50001CD09E /* OnyxViewController.swift */,
-				93F291532ACF2DAB00781464 /* InteropDemoApp.swift */,
-				93F291552ACF2DAB00781464 /* ContentView.swift */,
-				935D4A392AF03B93001CD09E /* OnyxView.swift */,
 				93F291572ACF2DAD00781464 /* Assets.xcassets */,
 				93F291592ACF2DAD00781464 /* Preview Content */,
+				93F4E3E12B1A41C3004BAB50 /* ContentView.swift */,
+				93F4E3E32B1A434B004BAB50 /* MapView.swift */,
+				93F4E3E52B1A4356004BAB50 /* MapViewController.swift */,
+				93F4E3E72B1A4397004BAB50 /* InteropDemo.swift */,
 			);
 			path = InteropDemo;
 			sourceTree = "<group>";
@@ -151,6 +155,13 @@
 			path = InteropDemoUITests;
 			sourceTree = "<group>";
 		};
+		93F4E3E92B1A56AB004BAB50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,7 +180,7 @@
 			);
 			name = InteropDemo;
 			packageProductDependencies = (
-				93B78E932AD9FCD000A98D31 /* TestOnyxPackage */,
+				93F4E3EA2B1A56AB004BAB50 /* OnyxMap */,
 			);
 			productName = InteropDemo;
 			productReference = 93F291502ACF2DAB00781464 /* InteropDemo.app */;
@@ -223,6 +234,7 @@
 				TargetAttributes = {
 					93F2914F2ACF2DAB00781464 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					93F2915F2ACF2DAD00781464 = {
 						CreatedOnToolsVersion = 15.0;
@@ -262,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F4E3ED2B1A5B6D004BAB50 /* tokens in Resources */,
 				93F2915B2ACF2DAD00781464 /* Preview Assets.xcassets in Resources */,
 				93F291582ACF2DAD00781464 /* Assets.xcassets in Resources */,
 				93F2644A2AEACF8400D917C0 /* token.txt in Resources */,
@@ -289,10 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F291562ACF2DAB00781464 /* ContentView.swift in Sources */,
-				935D4A3A2AF03B93001CD09E /* OnyxView.swift in Sources */,
-				935D4A3C2AF03D50001CD09E /* OnyxViewController.swift in Sources */,
-				93F291542ACF2DAB00781464 /* InteropDemoApp.swift in Sources */,
+				93F4E3E22B1A41C3004BAB50 /* ContentView.swift in Sources */,
+				93F4E3E62B1A4356004BAB50 /* MapViewController.swift in Sources */,
+				93F4E3E82B1A4397004BAB50 /* InteropDemo.swift in Sources */,
+				93F4E3E42B1A434B004BAB50 /* MapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InteropDemo/Preview Content\"";
@@ -481,6 +495,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InteropDemo/Preview Content\"";
@@ -650,10 +666,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		93B78E932AD9FCD000A98D31 /* TestOnyxPackage */ = {
+		93F4E3EA2B1A56AB004BAB50 /* OnyxMap */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 93B78E922AD9FCD000A98D31 /* XCRemoteSwiftPackageReference "TestOnyxPackage" */;
-			productName = TestOnyxPackage;
+			productName = OnyxMap;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

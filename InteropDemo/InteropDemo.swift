@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct InteropDemoApp: App {
+struct ConsumeLocalSwiftPackageApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
